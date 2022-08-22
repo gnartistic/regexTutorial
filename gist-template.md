@@ -76,8 +76,6 @@ This is a regular expression used for URL matching.
 -----
 ### Quantifiers
  -Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
- 
-**Please refer to the [example](#example) at the beggining of the tutorial.
 
  |Character| Explanation|
  |---------|:------------:|
@@ -88,9 +86,13 @@ This is a regular expression used for URL matching.
  |```{n,}``` and ```{n,}?```| matches at least n times.|
 |```{n,m}``` and ```{n,m}?```| matches from n to m times.|
 
-Examples:
-```https?``` will match 'https' or 'http' because of the ```?```.
-```[\da-z\.-]+``` will match a single digit, a group of letters (a-z), a dot (```.```), or a hyphen (```-```).  
+##### Examples
+
+
+**Please refer to the [example](#example) at the beggining of the tutorial.
+
+-```https?``` will match 'https' or 'http' because of the ```?```.
+-```[\da-z\.-]+``` will match a single digit, a group of letters (a-z), a dot (```.```), or a hyphen (```-```).  
 
 -----
 ### OR Operator
