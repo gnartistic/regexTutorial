@@ -129,6 +129,9 @@ This is a regular expression used for URL matching.
 
 ##### Examples
 *Please refer to the [example](#example) at the beggining of the tutorial.*
+
+|Character|
+|---------|
 |```[\da-z\.-]```|
 |```[a-z\.]```|
 |```[\/\w \.-]```|
@@ -139,6 +142,9 @@ This is a regular expression used for URL matching.
 
 ##### Examples
 *Please refer to the [example](#example) at the beggining of the tutorial.*
+
+|Character| Explanation|
+|---------|:-----------:|
 |```([\da-z\.-]+)```| The `+` operator is greedy as it allows character matching from one to an infinite amount of times.|
 
 -----
