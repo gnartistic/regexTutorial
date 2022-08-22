@@ -69,24 +69,24 @@ This is a regular expression used for URL matching.
 ## Regex Components
 
 ### Anchors
-The anchors are always at the beginning of the string. For the example above, ```^``` is the symbol to represent the beginning of the expression.
+-The anchors are always at the beginning of the string. For the example above, ```^``` is the symbol to represent the beginning of the expression.
 
-Side note: 
-The ```$``` represents the end of the expression.
+-Side note: The ```$``` represents the end of the expression.
 
 -----
 ### Quantifiers
- Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
+ -Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
  
-Please refer to the [example](#example) at the beggining of the tutorial.
+**Please refer to the [example](#example) at the beggining of the tutorial.
 
- Explained:
- ```*``` and ```*?``` matches 0 or more times.
- ```+``` and ```+?``` matches 1 or more times.
- ```?``` and ```??``` matches 0 or 1 times.
- ```{n}``` and ```{n}?``` matches exactly n times.
- ```{n,}``` and ```{n,}?``` matches at least n times.
-```{n,m}``` and ```{n,m}?``` matches from n to m times.
+ |Character| Explanation|
+ |---------|:------------:|
+ |```*``` and ```*?```| matches 0 or more times.|
+ |```+``` and ```+?```| matches 1 or more times.|
+ |```?``` and ```??```| matches 0 or 1 times.|
+ |```{n}``` and ```{n}?```| matches exactly n times.|
+ |```{n,}``` and ```{n,}?```| matches at least n times.|
+|```{n,m}``` and ```{n,m}?```| matches from n to m times.|
 
 Examples:
 ```https?``` will match 'https' or 'http' because of the ```?```.
