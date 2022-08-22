@@ -172,8 +172,9 @@ This is a regular expression used for URL matching.
 
 ## Author
 
-Hello! My name is Charlie Houston. I'd like to say that I'm a bit of an adventurist with a strong passion for software development. I really enjoy creating things, not just web applications. Once upon a time, I was a welder and a general contractor. I've been building things with my bare hands my entire life, and now I get to build them with my mind!
+Hello!
+My name is *Charlie Houston*. I'd like to say that I'm a bit of an adventurist with a strong passion for software development. I really enjoy creating things, not just web applications. Once upon a time, I was a welder and a general contractor. I've been building things with my bare hands my entire life, and now I get to build them with my mind!
 
-[github](https://github.com/gnartistic)
-[portfolio](https://gnartistic.github.io/charlie-houston/)
-[email](mailto:gn4rtistic@gmail.com)
+- [github](https://github.com/gnartistic)
+- [portfolio](https://gnartistic.github.io/charlie-houston/)
+- [email](mailto:gn4rtistic@gmail.com)
