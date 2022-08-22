@@ -92,8 +92,15 @@ This is a regular expression used for URL matching.
 
 -----
 ### OR Operator
+- The main OR operator used in the above regex is the `[]`. The expression will match for any characters or character classes included in the brackets.
 
+##### Examples
 
+*Please refer to the [example](#example) at the beggining of the tutorial.*
+
+- The `[\da-z\.-]` expression matches for any digits `\d` OR any characters between a and z `a-z` OR any `.` `\.` OR any `-`.
+
+-----
 ### Character Classes
 - Character classes ensure that a given sequence of characters matches a larger set of characters.
 
