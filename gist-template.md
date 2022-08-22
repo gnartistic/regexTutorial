@@ -16,7 +16,6 @@ This is a regular expression used for URL matching.
 |```^```|This is always at the begining of the string to position the anchors.|
 |```(```|Groups together multiple "tokens" to create a capture group. This can be uaed to retrieve a substring or back reference.|
 |```https```|This indicates a sub-expression string that should be matched.|
---------
 |```?```|This is a greedy quantifier. It denotes 0 or 1 occurence of the pervious character, for example, making `https`, `http`.|
 |```\/\/```|This is an escaped character.|
 |```)```|This ends the captured group.|
