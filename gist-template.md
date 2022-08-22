@@ -9,7 +9,22 @@ This is a regular expression used for URL matching.
 ```/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ ```
 
 -----
-#### Explanation
+## Table of Contents
+
+- [Anchors](#anchors)
+- [Quantifiers](#quantifiers)
+- [OR Operator](#or-operator)
+- [Character Classes](#character-classes)
+- [Flags](#flags)
+- [Grouping and Capturing](#grouping-and-capturing)
+- [Bracket Expressions](#bracket-expressions)
+- [Greedy and Lazy Match](#greedy-and-lazy-match)
+- [Boundaries](#boundaries)
+- [Back-references](#back-references)
+- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
+
+------
+## Regex Components
 
 | Character | Definition |
 |-----------|:------------:|
@@ -51,23 +66,6 @@ This is a regular expression used for URL matching.
 |```/```|Ends regex.|
 
 -----
-## Table of Contents
-
-- [Anchors](#anchors)
-- [Quantifiers](#quantifiers)
-- [OR Operator](#or-operator)
-- [Character Classes](#character-classes)
-- [Flags](#flags)
-- [Grouping and Capturing](#grouping-and-capturing)
-- [Bracket Expressions](#bracket-expressions)
-- [Greedy and Lazy Match](#greedy-and-lazy-match)
-- [Boundaries](#boundaries)
-- [Back-references](#back-references)
-- [Look-ahead and Look-behind](#look-ahead-and-look-behind)
-
-------
-## Regex Components
-
 ### Anchors
 - The anchors are always at the beginning of the string. For the example above, ```^``` is the symbol to represent the beginning of the expression.
 
@@ -87,8 +85,6 @@ This is a regular expression used for URL matching.
 |```{n,m}``` and ```{n,m}?```| matches from n to m times.|
 
 ##### Examples
-
-
 *Please refer to the [example](#example) at the beggining of the tutorial.*
 
 - ```https?``` will match 'https' or 'http' because of the ```?```.
@@ -101,6 +97,7 @@ This is a regular expression used for URL matching.
 ### Character Classes
 - Character classes ensure that a given sequence of characters matches a larger set of characters.
 
+##### Examples
 *Please refer to the [example](#example) at the beggining of the tutorial.*
 
 |Character| Explanation|
@@ -114,8 +111,9 @@ This is a regular expression used for URL matching.
 ### Flags
 
 ### Grouping and Capturing
-Grouping expressions allows us to keep things more organized and easier to exact the characters of any given group. To group expressions we use parenthesis ```()```.
+- Grouping expressions allows us to keep things more organized and easier to exact the characters of any given group. To group expressions we use parenthesis ```()```.
 
+##### Examples
 *Please refer to the [example](#example) at the beggining of the tutorial.*
 
 |Character| Explanation|
@@ -127,8 +125,23 @@ Grouping expressions allows us to keep things more organized and easier to exact
 -----
 ### Bracket Expressions
 
-### Greedy and Lazy Match
+- Bracket expressions re expressions between `[]`brackets. In the table above, we have the following bracket expressions:
 
+##### Examples
+*Please refer to the [example](#example) at the beggining of the tutorial.*
+|```[\da-z\.-]```|
+|```[a-z\.]```|
+|```[\/\w \.-]```|
+
+-----
+### Greedy and Lazy Match
+- Greedy and Lazy Quantifers allow you to find the Greedy and the Lazy match. "Greedy" being the longest. "Lazy" being the shortest.
+
+##### Examples
+*Please refer to the [example](#example) at the beggining of the tutorial.*
+|```([\da-z\.-]+)```| The `+` operator is greedy as it allows character matching from one to an infinite amount of times.|
+
+-----
 ### Boundaries
 
 ### Back-references
