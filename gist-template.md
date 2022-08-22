@@ -2,14 +2,15 @@
 This tutorial was created to help others understand how to use a regex, as well as to demonstrate my own understanding of regular expressions.
 
 A regular expression (Regex/Regexp), is a special text string for describing a search pattern. When included in code or search algorithms, regular expressions can be used to find certain patterns of characters within a string.
-
+-----
 ### Example
 
 This is a regular expression used for URL matching.
 
 ```/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ ```
- 
+-----
 #### Explanation
+
 | Character | Definition |
 |-----------|:------------:|
 |```/```|Begins regex.|
@@ -48,8 +49,7 @@ This is a regular expression used for URL matching.
 |```?```|Greedy quanitifier indicating previous character `/` may have 0 or 1 occurence.|
 |```$```|Position anchoring that ends the string.|
 |```/```|Ends regex.|
-
-
+-----
 
 ## Table of Contents
 
@@ -72,7 +72,7 @@ The anchors are always at the beginning of the string. For the example above, ``
 
 Side note: 
 The ```$``` represents the end of the expression.
-
+-----
 ### Quantifiers
  Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
  
@@ -89,8 +89,9 @@ Please refer to the [example](#example) at the beggining of the tutorial.
 Examples:
 ```https?``` will match 'https' or 'http' because of the ```?```.
 ```[\da-z\.-]+``` will match a single digit, a group of letters (a-z), a dot (```.```), or a hyphen (```-```).  
-
+-----
 ### OR Operator
+
 
 ### Character Classes
 Character classes ensure that a given sequence of characters matches a larger set of characters.
@@ -102,7 +103,7 @@ Explained:
 ```\w``` will match a single word.
 ```\d``` will match a single character that is a number, 0-9.
 ```.``` will match any character
-
+-----
 ### Flags
 
 ### Grouping and Capturing
@@ -114,8 +115,7 @@ Explained:
 ```(https?:\/\/)``` this group means that the url can begin with either ```http://``` or ```https://```.
 ```([\da-z\.-]+)``` this group is the domain name. It matches 1 or more numbers, letters, dots, or hyphens.
 ```([a-z\.]{2,6})``` this group is connected with ```+```, this matches 2-6 copies of the sequences ```[a-z\.]```.
-
-
+-----
 ### Bracket Expressions
 
 ### Greedy and Lazy Match
