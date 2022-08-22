@@ -9,6 +9,47 @@ This is a regular expression used for URL matching.
 
 ```/^(https?:\/\/)?([\da-z\.-]+)\.([a-z\.]{2,6})([\/\w \.-]*)*\/?$/ ```
  
+#### Explanation
+| Character | Definition |
+|-----------|:------------:|
+|```/```|Begins regex.|
+|```^```|This is always at the begining of the string to position the anchors.|
+|```(```|Groups together multiple "tokens" to create a capture group. This can be uaed to retrieve a substring or back reference.|
+|```https```|This indicates a sub-expression string that should be matched.|
+--------
+|```?```|This is a greedy quantifier. It denotes 0 or 1 occurence of the pervious character, for example, making `https`, `http`.|
+|```\/\/```|This is an escaped character.|
+|```)```|This ends the captured group.|
+|```?```|Greedy quantifier indicating the entire previous section wrapped.|
+|```(```|Begins captured group.|
+|```[```|Begins bracket list.|
+|```/d```|This is a metacharacter indicaiong one any one digit character, 0-9.|
+|```a-z```|This indicates lowercase letter between a-z.|
+|```\.```|Escape sequence denoting the character `.`|
+|```-```|This indicates the character `-`.|
+|```]```|Ends bracket list.|
+|```+```|Because this is outside the greedy quantifier, it is denoting that the previous bracket list characters may occur one or more times.|
+|```)```|Ends captured group.|
+|```\.```|Escape sequence denotiong the character `.`|
+|```(```|Begins capture group.|
+|```[```|Begins bracket list.|
+|```a-z```|Indicates lowercase letters between a-z.|
+|```]```|Ends backet list|
+|```2-6```|Occurence indicator denoting the previous bracket list characters may occur from 2-6 times.|
+|```)```|Ends captured group.|
+|```(```|Begins captured group.|
+|```[```|Begins bracket list.|
+|```/```|Escapes regex to match the character `/`.|
+|```\w```|This is a character class indicationg any dingle word characters. Those are any characters including a-z, A-Z, 0-9, and _.|
+|```.```|Escape sequence denoting the character `.`|
+|```-```|This indicated the `-` character.|
+|```]```|Ends bracket list.|
+|```*```|Greedy quantifier indicating that the entire previous captured group may occur zero or more times.|
+|```/```|Escapes regex to denote the `/` character.|
+|```?```|Greedy quanitifier indicating previous character `/` may have 0 or 1 occurence.|
+|```$```|Position anchoring that ends the string.|
+|```/```|Ends regex.|
+
 
 
 ## Table of Contents
