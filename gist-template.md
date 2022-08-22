@@ -69,45 +69,46 @@ This is a regular expression used for URL matching.
 ## Regex Components
 
 ### Anchors
--The anchors are always at the beginning of the string. For the example above, ```^``` is the symbol to represent the beginning of the expression.
+- The anchors are always at the beginning of the string. For the example above, ```^``` is the symbol to represent the beginning of the expression.
 
--Side note: The ```$``` represents the end of the expression.
+- Side note: The ```$``` represents the end of the expression.
 
 -----
 ### Quantifiers
- -Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
+- Quantifiers communicate to the regex engine that it must match the quanity of the character or the expression to it's left. There are 2 types of quantifiers: greedy, and lazy. 
 
- |Character| Explanation|
- |---------|:------------:|
- |```*``` and ```*?```| matches 0 or more times.|
- |```+``` and ```+?```| matches 1 or more times.|
- |```?``` and ```??```| matches 0 or 1 times.|
- |```{n}``` and ```{n}?```| matches exactly n times.|
- |```{n,}``` and ```{n,}?```| matches at least n times.|
+|Character| Explanation|
+|---------|:------------:|
+|```*``` and ```*?```| matches 0 or more times.|
+|```+``` and ```+?```| matches 1 or more times.|
+|```?``` and ```??```| matches 0 or 1 times.|
+|```{n}``` and ```{n}?```| matches exactly n times.|
+|```{n,}``` and ```{n,}?```| matches at least n times.|
 |```{n,m}``` and ```{n,m}?```| matches from n to m times.|
 
 ##### Examples
 
 
-**Please refer to the [example](#example) at the beggining of the tutorial.
+*Please refer to the [example](#example) at the beggining of the tutorial.*
 
--```https?``` will match 'https' or 'http' because of the ```?```.
--```[\da-z\.-]+``` will match a single digit, a group of letters (a-z), a dot (```.```), or a hyphen (```-```).  
+- ```https?``` will match 'https' or 'http' because of the ```?```.
+- ```[\da-z\.-]+``` will match a single digit, a group of letters (a-z), a dot (```.```), or a hyphen (```-```).  
 
 -----
 ### OR Operator
 
 
 ### Character Classes
-Character classes ensure that a given sequence of characters matches a larger set of characters.
+- Character classes ensure that a given sequence of characters matches a larger set of characters.
 
-Please refer to the [example](#example) at the beggining of the tutorial.
+*Please refer to the [example](#example) at the beggining of the tutorial.*
 
-Explained:
-```[a-z]``` will match lowercase alphabetic characters, a through z.
-```\w``` will match a single word.
-```\d``` will match a single character that is a number, 0-9.
-```.``` will match any character
+|Character| Explanation|
+|---------|:-----------:|
+|```[a-z]```| will match lowercase alphabetic characters, a through z.|
+|```\w```| will match a single word.|
+|```\d```| will match a single character that is a number, 0-9.|
+|```.```| will match any character.|
 
 -----
 ### Flags
@@ -115,12 +116,13 @@ Explained:
 ### Grouping and Capturing
 Grouping expressions allows us to keep things more organized and easier to exact the characters of any given group. To group expressions we use parenthesis ```()```.
 
-Please refer to the [example](#example) at the beggining of the tutorial.
+*Please refer to the [example](#example) at the beggining of the tutorial.*
 
-Explained:
-```(https?:\/\/)``` this group means that the url can begin with either ```http://``` or ```https://```.
-```([\da-z\.-]+)``` this group is the domain name. It matches 1 or more numbers, letters, dots, or hyphens.
-```([a-z\.]{2,6})``` this group is connected with ```+```, this matches 2-6 copies of the sequences ```[a-z\.]```.
+|Character| Explanation|
+|---------|:-----------:|
+|```(https?:\/\/)```| this group means that the url can begin with either ```http://``` or ```https://```.|
+|```([\da-z\.-]+)```| this group is the domain name. It matches 1 or more numbers, letters, dots, or hyphens.|
+|```([a-z\.]{2,6})```| this group is connected with ```+```, this matches 2-6 copies of the sequences ```[a-z\.]```.|
 
 -----
 ### Bracket Expressions
