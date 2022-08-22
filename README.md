@@ -98,7 +98,7 @@ This is a regular expression used for URL matching.
 
 *Please refer to the [example](#example) at the beggining of the tutorial.*
 
-- The `[\da-z\.-]` expression matches for any digits `\d` OR any characters between a and z `a-z` OR any `.` `\.` OR any `-`.
+- The `[\da-z\.-]` expression matches for any digits (`\d`) OR any characters between a and z (`a-z`) OR any `.`, `\.`, OR any `-`.
 
 -----
 ### Character Classes
@@ -117,6 +117,20 @@ This is a regular expression used for URL matching.
 -----
 ### Flags
 
+- Regular expressions may have flags that affect the search.
+
+##### Examples
+*Please refer to the [example](#example) at the beggining of the tutorial.*
+
+|Character| Explanation|
+|---------|:-----------:|
+|```i```|With this flag the search is case-insensitive: no difference between A and a.|
+|```g```|With this flag the search looks for all matches, without it – only the first match is returned.|
+|```m```|Multiline mode.|
+|```s```|Enables “dotall” mode, that allows a dot (`.`) to match newline character `\n`.| 
+|```u```|Enables full Unicode support. The flag enables correct processing of surrogate pairs.|
+|```y```|“Sticky” mode: searching at the exact position in the text.|
+
 ### Grouping and Capturing
 - Grouping expressions allows us to keep things more organized and easier to exact the characters of any given group. To group expressions we use parenthesis ```()```.
 
@@ -132,7 +146,7 @@ This is a regular expression used for URL matching.
 -----
 ### Bracket Expressions
 
-- Bracket expressions are expressions between `[]`brackets. In the table above, we have the following bracket expressions:
+- Bracket expressions re expressions between `[]`brackets. In the table above, we have the following bracket expressions:
 
 ##### Examples
 *Please refer to the [example](#example) at the beggining of the tutorial.*
@@ -155,12 +169,11 @@ This is a regular expression used for URL matching.
 |```([\da-z\.-]+)```| The `+` operator is greedy as it allows character matching from one to an infinite amount of times.|
 
 -----
-### Boundaries
-
-### Back-references
-
-### Look-ahead and Look-behind
 
 ## Author
 
-A short section about the author with a link to the author's GitHub profile (replace with your information and a link to your profile)
+Hello! My name is Charlie Houston. I'd like to say that I'm a bit of an adventurist with a strong passion for software development. I really enjoy creating things, not just web applications. Once upon a time, I was a welder and a general contractor. I've been building things with my bare hands my entire life, and now I get to build them with my mind!
+
+[github](https://github.com/gnartistic)
+[portfolio](https://gnartistic.github.io/charlie-houston/)
+[email](mailto:gn4rtistic@gmail.com)

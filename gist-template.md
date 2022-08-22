@@ -98,7 +98,7 @@ This is a regular expression used for URL matching.
 
 *Please refer to the [example](#example) at the beggining of the tutorial.*
 
-- The `[\da-z\.-]` expression matches for any digits `\d` OR any characters between a and z `a-z` OR any `.` `\.` OR any `-`.
+- The `[\da-z\.-]` expression matches for any digits (`\d`) OR any characters between a and z (`a-z`) OR any `.`, `\.`, OR any `-`.
 
 -----
 ### Character Classes
